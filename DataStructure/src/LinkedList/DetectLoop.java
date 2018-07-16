@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class DetectLoop {
 	public static void main(String args[]) {
 		Node head = initialiseLinkedList();
-//		head.next.next.next.next = head; //This is four element if total number of 4 element then run code with this line
+		//This is for four element if total number of 4 element then run code with below line uncommented
+//		head.next.next.next.next = head; 
 		System.out.println("Current list is:-> ");
 		printList(head);
 
