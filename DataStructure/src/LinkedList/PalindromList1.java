@@ -62,6 +62,7 @@ public class PalindromList1 {
 	}
 
 	private static void printList(Node head) {
+		
 		Node curr = head;
 		while (curr != null) {
 			System.out.print(curr.item + " ");
