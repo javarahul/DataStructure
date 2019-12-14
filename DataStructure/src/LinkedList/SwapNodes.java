@@ -12,7 +12,7 @@ public class SwapNodes {
 
 		head = swapNode(head);
 
-		System.out.println("List after remove duplicate item is:-> ");
+		System.out.println("List after Node Swap is:-> ");
 		printList(head);
 	}
 
