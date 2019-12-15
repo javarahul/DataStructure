@@ -2,7 +2,7 @@ package LinkedList;
 
 import java.util.Scanner;
 
-public class SwapNodesRecursive {
+public class SwapNodesInPairsRecursive {
 
 	public static void main(String[] args) {
 		Node head = initialiseLinkedList();
