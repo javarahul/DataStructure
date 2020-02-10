@@ -3,7 +3,7 @@ package tree;
 import java.util.ArrayList;
 import java.util.Stack;
 
-public class PostOrderIterativeTraversal {
+public class PostOrderIterativeTraversal1 {
 
 	public static void main(String[] args) {
 		Node root = initializeTree();
