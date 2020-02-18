@@ -15,10 +15,10 @@ public class LevelOrderTraversal1 {
 	}
 
 	private static ArrayList<ArrayList<Integer>> levelOrderTraversal(Node root) {
-		ArrayList<ArrayList<Integer>> al = new ArrayList<ArrayList<Integer>>();
+		ArrayList<ArrayList<Integer>> row = new ArrayList<ArrayList<Integer>>();
 		ArrayList<Integer> nodeValues = new ArrayList<Integer>();
 		if (root == null)
-			return al;
+			return row;
 
 		LinkedList<Node> current = new LinkedList<Node>();
 		LinkedList<Node> next = new LinkedList<Node>();
@@ -27,21 +27,22 @@ public class LevelOrderTraversal1 {
 		while (!current.isEmpty()) {
 			Node node = current.remove();
 
-			if (node.left != null)
+			if (node.left != null) {
 				next.add(node.left);
-			if (node.right != null)
+			}
+			if (node.right != null) {
 				next.add(node.right);
+			}
 
 			nodeValues.add(node.val);
 			if (current.isEmpty()) {
 				current = next;
 				next = new LinkedList<Node>();
-				al.add(nodeValues);
+				row.add(nodeValues);
 				nodeValues = new ArrayList<>();
 			}
-
 		}
-		return al;
+		return row;
 	}
 
 	private static Node initializeTree() {
