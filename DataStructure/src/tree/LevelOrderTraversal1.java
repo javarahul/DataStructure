@@ -10,7 +10,7 @@ public class LevelOrderTraversal1 {
 
 		ArrayList<ArrayList<Integer>> result = levelOrderTraversal(root);
 
-		System.out.println("List after In order traversal:-> " + result);
+		System.out.println("List after Level order traversal:-> " + result);
 
 	}
 
