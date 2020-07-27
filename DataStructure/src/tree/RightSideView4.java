@@ -4,8 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class RightSideView4 {
-	private static MaxLeve max = new MaxLeve();
-
 	public static void main(String[] args) {
 		Node root = initializeTree();
 
