@@ -29,6 +29,9 @@ public class SumRootToLeaf {
 			return curVal;
 		}
 
+		if (node.left!=null){
+			
+		}
 		return getSumFromRootToLeaf(node.left, curVal) + getSumFromRootToLeaf(node.right, curVal);
 	}
 
