@@ -20,7 +20,13 @@ public class CountCompleteTreeNodes1 {
 			return 0;
 		}
 
-		return 1 + getCountCompleteTreeNodes(root.left) + getCountCompleteTreeNodes(root.right);
+		int sum = 0;
+
+		if (root.left != null && root.right != null) {
+			sum++;
+		}
+
+		return sum += getCountCompleteTreeNodes(root.left) + getCountCompleteTreeNodes(root.right);
 	}
 
 	private static Node initializeTree() {
