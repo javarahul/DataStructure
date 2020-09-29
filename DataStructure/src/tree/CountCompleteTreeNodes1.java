@@ -12,7 +12,7 @@ public class CountCompleteTreeNodes1 {
 
 		int total = getCountCompleteTreeNodes(root);
 
-		System.out.println("Sum from Root to leaf:-> " + total);
+		System.out.println("Total Available Nodes in tree:-> " + total);
 	}
 
 	private static int getCountCompleteTreeNodes(Node root) {
