@@ -1,6 +1,4 @@
-package LinkedList;
-
-import tree.Node;
+package tree;
 
 public class PrintLeafNodes {
 
