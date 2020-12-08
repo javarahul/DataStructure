@@ -21,16 +21,16 @@ public class LargestBSTSubtree2 {
 		}
 
 		Wrapper left = helper(node.left);
-		Wrapper r = helper(node.right);
+		Wrapper right = helper(node.right);
 
 		curr.lower = Math.min(node.val, left.lower);
-		curr.upper = Math.max(node.val, r.upper);
+		curr.upper = Math.max(node.val, right.upper);
 
-		if (left.isBST && r.isBST && left.upper <= node.val && r.lower >= node.val) {
-			curr.size = left.size + r.size + 1;
+		if (left.isBST && right.isBST && left.upper <= node.val && right.lower >= node.val) {
+			curr.size = left.size + right.size + 1;
 			curr.isBST = true;
 		} else {
-			curr.size = Math.max(left.size, r.size);
+			curr.size = Math.max(left.size, right.size);
 			curr.isBST = false;
 		}
 		return curr;
