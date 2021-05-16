@@ -33,7 +33,7 @@ public class IsomrophicString1 {
 					return false;
 				}
 				map1.put(c1, c2);
-				map2.put(c1, c1);
+				map2.put(c2, c1);
 			}
 		}
 		return true;
