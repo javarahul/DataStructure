@@ -1,4 +1,4 @@
-package array;
+package array.string;
 
 public class ReverseString {
 
