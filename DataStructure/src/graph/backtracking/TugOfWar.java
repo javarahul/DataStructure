@@ -1,4 +1,4 @@
-package graph;
+package graph.backtracking;
 
 public class TugOfWar {
 	private int minDiff;
