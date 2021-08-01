@@ -8,14 +8,16 @@ public class TwoSum1 {
 		int A[] = { 1, 4, 45, 6, 10, -8 };
 		int n = 16;
 
-		int result[] = new int[2];
+		boolean result = twosum(A, n);
 
-		result = twosum(A, n);
-
-		System.out.println(result[0] + "," + result[1]);
+		if (result) {
+			System.out.println("Pairs are present");
+		}else {
+			System.out.println("Pairs are not present");
+		}
 	}
 
-	private static int[] twosum(int[] nums, int target) {
+	private static boolean twosum(int[] nums, int target) {
 		int l = 0;
 		int r = nums.length - 1;
 
@@ -24,13 +26,13 @@ public class TwoSum1 {
 		while (l < r) {
 			int tempSum = nums[l] + nums[r];
 			if (tempSum == target) {
-				return new int[] { l, r };
+				return true;
 			} else if (tempSum < target) {
 				l++;
 			} else {
 				r--;
 			}
 		}
-		return null;
+		return false;
 	}
 }
