@@ -19,9 +19,14 @@ public class ReverseDigit3 {
 			flag = true;
 		}
 		int revNum = 0;
+		int prevRevNum = 0;
 		while (num > 0) {
 			int rem = num % 10;
 			revNum = revNum * 10 + rem;
+			if ((revNum - rem) / 10 != prevRevNum) {
+				return 0;
+			}
+			prevRevNum = revNum;
 			num = num / 10;
 		}
 		if (flag) {
