@@ -33,7 +33,6 @@ public class LongestCommonPrefix1 {
 				break;
 			}
 		}
-
 		return str[0].substring(0, i);
 	}
 }
