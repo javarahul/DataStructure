@@ -17,7 +17,6 @@ public class LongestCommonPrefix1 {
 		if (str.length == 1) {
 			return str[0];
 		}
-
 		int i = 0;
 		while (true) {
 			boolean flag = true;
