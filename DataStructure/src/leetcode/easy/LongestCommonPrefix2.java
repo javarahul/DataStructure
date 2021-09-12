@@ -13,6 +13,8 @@ public class LongestCommonPrefix2 {
 		if (str == null || str.length == 0) {
 			return "";
 		}
+		
+		
 		if (str.length == 1) {
 			return str[0];
 		}
