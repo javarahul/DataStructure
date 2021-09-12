@@ -13,8 +13,7 @@ public class LongestCommonPrefix2 {
 		if (str == null || str.length == 0) {
 			return "";
 		}
-		
-		
+
 		if (str.length == 1) {
 			return str[0];
 		}
@@ -50,7 +49,7 @@ public class LongestCommonPrefix2 {
 	}
 
 	private static boolean allContainsPrefix(String[] strs, String str, int start, int end) {
-		for (int i = 0; i < str.length(); i++) {
+		for (int i = 0; i < strs.length; i++) {
 			String strs_i = strs[i];
 
 			for (int j = start; j <= end; j++) {
