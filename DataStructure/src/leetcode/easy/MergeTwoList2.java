@@ -49,7 +49,7 @@ public class MergeTwoList2 {
 		System.out.println("Enter numbers:-> ");
 		int num = sc.nextInt();
 		ListNode head = new ListNode(num);
-		ListNode curr = head;
+		ListNode curr = head;		
 		for (int i = 0; i < n - 1; i++) {
 			num = sc.nextInt();
 			head.next = new ListNode(num);
