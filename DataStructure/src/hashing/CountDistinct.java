@@ -3,7 +3,6 @@ package hashing;
 import java.util.HashSet;
 
 public class CountDistinct {
-
 	public static void main(String[] args) {
 		int arr[] = { 15, 12, 13, 12, 13, 13, 18 };
 

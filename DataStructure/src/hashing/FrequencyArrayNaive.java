@@ -1,7 +1,6 @@
 package hashing;
 
 public class FrequencyArrayNaive {
-
 	public static void main(String[] args) {
 		int arr[] = { 15, 12, 13, 12, 13, 13, 18 };
 
