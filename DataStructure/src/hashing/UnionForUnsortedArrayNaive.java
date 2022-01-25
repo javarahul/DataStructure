@@ -52,9 +52,9 @@ public class UnionForUnsortedArrayNaive {
 			}
 		}
 
-		for (int i = 0; i < dist.length; i++) {
-			System.out.print(dist[i] + ", ");
-		}
+		/*
+		 * for (int i = 0; i < dist.length; i++) { System.out.print(dist[i] + ", "); }
+		 */
 		return result;
 	}
 }
