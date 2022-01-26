@@ -1,7 +1,6 @@
 package hashing;
 
-public class PairWithGivenSum {
-
+public class PairWithGivenSumNaive {
 	public static void main(String[] args) {
 		int a[] = { 8, 4, 3, 9 };
 		int sum = 13;
