@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 import java.lang.*;
   
-class Test {
+class HeapInsert {
     
     public static class MinHeap{
         int arr[];
