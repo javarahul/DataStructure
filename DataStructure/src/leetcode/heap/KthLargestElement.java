@@ -1,4 +1,4 @@
-class Solution {
+class KthLargestElement {
     public static void main(String[] args){
       int arr[] = { 11, 3, 2, 1, 15, 5, 4, 45, 88, 96, 50, 45 };
 		  int k = 3;
