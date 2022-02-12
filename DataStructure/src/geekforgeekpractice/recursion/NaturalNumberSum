@@ -1,0 +1,21 @@
+package geeksforgeeks.recursion;
+
+import java.util.Scanner;
+
+public class NaturalNumberSum {
+	public static void main(String[] args) {
+		System.out.println("Enter a number N:-> ");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+
+		System.out.println("Sum of natural number till:- " + n + " is:-" + getSumofNaturalNumber(n));
+	}
+
+	private static int getSumofNaturalNumber(int n) {
+		if (n == 0) {
+			return 0;
+		}
+
+		return n + getSumofNaturalNumber(n - 1);
+	}
+}
