@@ -20,6 +20,7 @@ public class FloorInSortedArray {
 			int mid = start + (end - start) / 2;
 			if (arr[mid] == x) {
 				result = x;
+				return result;
 			} else if (arr[mid] > x) {
 				end = mid - 1;
 			} else if (arr[mid] < x) {
