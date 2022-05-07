@@ -24,7 +24,11 @@ public class FrequencySortIncreasingOrder {
 
 			@Override
 			public int compare(Entry<Integer, Integer> entry1, Entry<Integer, Integer> entry2) {
-				return entry1.getValue().compareTo(entry2.getValue());
+				if (entry1.getValue().equals(entry2.getValue())) {
+					return Integer.compare(entry2.getKey(), entry1.getKey());
+				} else {
+					return Integer.compare(entry1.getValue(), entry2.getValue());
+				}
 			}
 		});
 
