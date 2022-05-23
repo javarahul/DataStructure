@@ -24,7 +24,7 @@ public class SubsetSum1 {
 					dp[i][j] = false;
 				}
 				if (j == 0) {
-					dp[i][0] = true;
+					dp[i][j] = true;
 				}
 			}
 		}
