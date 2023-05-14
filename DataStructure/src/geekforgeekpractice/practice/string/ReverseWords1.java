@@ -23,8 +23,8 @@ public class ReverseWords1 {
 				tempString = "";
 			}
 		}
-		stack.push(String.valueOf(' '));
-		stack.push(tempString);
+		stack.push(String.valueOf(' ')); // Adding space before last word
+		stack.push(tempString); // adding last word
 		tempString = "";
 		while (!stack.isEmpty()) {
 			tempString += stack.pop();
